@@ -14,10 +14,12 @@
  * Explanation : 
  * ab of length 2 is the smallest window 
  * with highest number of distinct characters.
+ *
+ * @param {string} input
+ * @returns {string}
  */
-
-function factorial(num) { 
-  return (num === 0) ? 1 : num * factorial(num - 1);
+function smallestWindow(input) {
+  let output = ''
+  // TODO:
+  return output
 }
-
-console.log(FirstFactorial(6));
