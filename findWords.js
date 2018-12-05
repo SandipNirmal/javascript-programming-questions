@@ -52,9 +52,9 @@ function getValidWordsFromString(problemStr = '', isSubStr = false) {
  * Assume we have dictionary of valid words
  */
 const dictionary = {
-  valiDWords: ['java', 'script', 'javascript', 'developer', 'angular', 'react', 'node'],
+  validWords: ['java', 'script', 'javascript', 'developer', 'angular', 'react', 'node'],
   isValid: (str) => {
-    return dictionary.valiDWords.some((word) => word.toLowerCase() === str.toLowerCase())
+    return dictionary.validWords.some((word) => word.toLowerCase() === str.toLowerCase())
   }
 }
 
