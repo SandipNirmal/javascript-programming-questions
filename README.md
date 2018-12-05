@@ -1,2 +1,3 @@
-# javascript-programming-questions
+# Javascript Programming Questions
+
 Contains JavaScript programming interview questions.
