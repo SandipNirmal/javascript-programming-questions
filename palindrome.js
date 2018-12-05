@@ -1,6 +1,6 @@
 /**
  * Checks and return if passed value is palindrome or not
- * @param {*} val
+ * @param {string} val
  * @returns {boolean}
  */
 function checkPalindrome(val) {
