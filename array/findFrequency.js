@@ -36,24 +36,46 @@ function findFrequency(arr, item) {
  * 
  * @returns {number|boolean}
  */
-function binarySearch(arr, item) {
-  let min = 0;
-  let max = arr.length - 1;
+// function binarySearch(arr, item) {
+//   let min = 0;
+//   let max = arr.length - 1;
 
-  let searchIndex;
+//   let searchIndex;
 
-  while (min <= max) {
-    searchIndex = Math.abs((min + max) / 2);
-    const guess = arr[searchIndex];
+//   while (min <= max) {
+//     searchIndex = Math.abs((min + max) / 2);
+//     const guess = arr[searchIndex];
 
-    if (guess === item) {
-      return searchIndex;
-    } else if (guess < item) {
-      min += 1;
-    } else {
-      max -= 1;
-    }
+//     if (guess === item) {
+//       return searchIndex;
+//     }
+    
+//     if (guess < item) {
+//       min = searchIndex + 1;
+//     } else {
+//       max = searchIndex - 1;
+//     }
+//   }
+
+//   return false;
+// }
+function binarySearch(arr, target) {
+  let left = 0;
+  let right = arr.length - 1;
+
+  while (left <= right) {
+      const mid = left + Math.floor((right - left) / 2);
+      
+      if (arr[mid] === target) {
+          return mid;
+      }
+      
+      if (arr[mid] < target) {
+          left = mid + 1;
+      } else {
+          right = mid - 1;
+      }
   }
 
-  return false;
+  return -1;
 }
