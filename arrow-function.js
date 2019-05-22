@@ -45,8 +45,10 @@ var bunny = {
 };
 bunny.showTasks()
 
+/*
 Uncaught TypeError: Cannot read property 'forEach' of undefined
     at Object.showTasks (<anonymous>:5:16)
     at <anonymous>:1:7
 showTasks @ VM307:5
 (anonymous) @ VM322:1
+*/
